@@ -1,4 +1,3 @@
-# 💻:
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
   <img width="12" />
@@ -18,6 +17,8 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="30" alt="vscode logo"  />
 </div>
+
+---
 
 # 📊 Stats:
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=reviewbd&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)<br/>
