@@ -1,4 +1,4 @@
-<h2 align="left">Salut 👋 ! Je suis ReviewB</h2>
+<h2 align="left">Salut 👋! Je suis ReviewB</h2>
 
 ###
 
