@@ -1,3 +1,13 @@
+<div align="center">
+<h1 align="center">Hi <img width="35" src="./resources/waving.gif"> I'm ReviewB</h1>
+</div>
+
+<div align="center">
+  <a href="https://kunah.fr">
+  <img  src="./resources/grid-snake.svg"
+       alt="snake" /></a>
+</div>
+
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
   <img width="12" />
