@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <a href="https://kunah.fr">
+  <a href="https://belhorm.xyz">
   <img  src="./resources/grid-snake.svg"
        alt="snake" /></a>
 </div>
