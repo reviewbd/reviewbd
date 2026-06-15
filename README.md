@@ -5,6 +5,11 @@ Développeur · Administrateur système
 &nbsp;[![Discord](https://img.shields.io/badge/Discord-24292E?style=flat&logo=discord&logoColor=white)](#)
 
 <!-- ORGS:START -->
+**Work at:**
+
+<a href="https://github.com/SlantingStds" title="SlantingStds"><img src="https://avatars.githubusercontent.com/u/108013216?v=4&s=64" width="42" height="42" alt="SlantingStds"/></a>
+&nbsp;<a href="https://github.com/Addveo" title="Addveo"><img src="https://avatars.githubusercontent.com/u/220429166?v=4&s=64" width="42" height="42" alt="Addveo"/></a>
+&nbsp;<a href="https://github.com/AsgardFiveM" title="AsgardFiveM"><img src="https://avatars.githubusercontent.com/u/275133017?v=4&s=64" width="42" height="42" alt="AsgardFiveM"/></a>
 <!-- ORGS:END -->
 
 ---
