@@ -23,6 +23,7 @@ Je préfère comprendre une stack de bout en bout et garder des systèmes fiable
 `Administration système` &nbsp;`Infrastructure self-hosted` &nbsp;`Automatisation` &nbsp;`Déploiements` &nbsp;`Backend`
 
 ### Stack
+![Go](https://img.shields.io/badge/Got-24292E?style=flat&logo=go&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-24292E?style=flat&logo=javascript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-24292E?style=flat&logo=node.js&logoColor=white)
 ![Lua](https://img.shields.io/badge/Lua-24292E?style=flat&logo=lua&logoColor=white)
