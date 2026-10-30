@@ -8,7 +8,7 @@ Développeur · Administrateur système
 **Work at:**
 
 <a href="https://github.com/Addveo" title="Addveo"><img src="https://avatars.githubusercontent.com/u/220429166?v=4&s=64" width="42" height="42" alt="Addveo"/></a>
-&nbsp;<a href="https://github.com/AsgardFiveM" title="AsgardFiveM"><img src="https://avatars.githubusercontent.com/u/275133017?v=4&s=64" width="42" height="42" alt="AsgardFiveM"/></a>
+&nbsp;<a href="https://github.com/RyvenRP" title="RyvenRP"><img src="https://avatars.githubusercontent.com/u/275133017?v=4&s=64" width="42" height="42" alt="RyvenRP"/></a>
 <!-- ORGS:END -->
 
 ---
