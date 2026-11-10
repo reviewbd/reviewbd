@@ -17,7 +17,4 @@
   <sub><a href="https://github.com/Addveo">Addveo</a> · <a href="https://github.com/RyvenRP">RyvenRP</a></sub>
 </div>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/reviewbd/reviewbd/output/pacman-contribution-graph-dark.svg">
-  <img alt="ReviewB contribution graph" width="100%" src="https://raw.githubusercontent.com/reviewbd/reviewbd/output/pacman-contribution-graph.svg">
-</picture>
+<img alt="ReviewB contribution graph" width="100%" src="https://raw.githubusercontent.com/reviewbd/reviewbd/output/pacman-contribution-graph.svg">
