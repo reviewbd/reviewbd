@@ -33,7 +33,7 @@
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=reviewbd&bg_color=161b22&color=c9d1d9&line=ff7b00&point=a5d6ff&area=true&hide_border=true" width="100%" alt="GitHub contribution activity"/>
+  <img src="https://raw.githubusercontent.com/reviewbd/reviewbd/output/pacman-contribution-graph-dark.svg" width="100%" alt="GitHub contribution graph"/>
 </div>
 
 ## Public organization
