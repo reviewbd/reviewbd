@@ -11,7 +11,7 @@ on:
       - "pacman_light.svg"
 
 concurrency:
-  group: claude-pacman-graph
+  group: profile-main-write
   cancel-in-progress: false
 
 permissions:
