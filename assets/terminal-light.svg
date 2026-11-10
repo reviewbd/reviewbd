@@ -2,9 +2,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1018px" height="551px" viewBox="0 0 1018 551" font-family="Consolas,Menlo,monospace">
 <style>.key{fill:#bc4c00;}.value{fill:#0550ae;}.title{fill:#bc4c00;font-weight:bold;}.cc{fill:#8c959f;}text,tspan{white-space:pre;}</style>
 <rect width="1018" height="551" rx="15" fill="#ffffff"/>
-<defs><clipPath id="reviewbAvatarClip"><circle cx="195" cy="245" r="145"/></clipPath></defs>
+<defs><clipPath id="reviewbAvatarClip" clipPathUnits="userSpaceOnUse"><circle cx="195" cy="245" r="145"/></clipPath></defs>
 <circle cx="195" cy="245" r="151" fill="none" stroke="#F76E0A" stroke-width="2" opacity=".8"/>
-<text clip-path="url(#reviewbAvatarClip)" font-family="Consolas,Menlo,monospace" font-size="5.3" fill="#F76E0A" xml:space="preserve">
+<g clip-path="url(#reviewbAvatarClip)">
+<text font-family="Consolas,Menlo,monospace" font-size="5.3" fill="#F76E0A" xml:space="preserve">
 <tspan x="65.5" y="111">============+++++++******+=--=+++**#**############%%%%%%%#**%%%%%%##%%%%%%%%%%%%%%%%%%%</tspan>
 <tspan x="65.5" y="116.3">===========+++++++**+******--====+**++########*###%%%%%%%#*#%%%%%%%%%%%%%%%%%%%%%%%%%%%</tspan>
 <tspan x="65.5" y="121.6">=+======+===+++++**********+---:==+**#*########*####%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</tspan>
@@ -58,6 +59,7 @@
 <tspan x="65.5" y="376">##************************++*************+++==--::...   ....::::.-++*#%%%%%#**+++++****</tspan>
 <tspan x="65.5" y="381.3">####################**#***********************++==-::...    ...:=+*#%%%%%%*+=--=====++*</tspan>
 </text>
+</g>
 <text fill="#24292f" font-size="16px">
 <tspan x="447" y="31"><tspan class="title">reviewbd@github</tspan> -————————————————————————————————————————-</tspan>
 <tspan x="447" y="51"><tspan class="cc">. </tspan><tspan class="key">OS</tspan>:</tspan><tspan x="670" y="51" class="cc">........................</tspan><tspan x="760" y="51" class="value">Windows, Linux</tspan>
