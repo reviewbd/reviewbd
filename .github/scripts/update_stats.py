@@ -19,10 +19,14 @@ def github_get(url):
 
 def replace_svg_value(content, element_id, value):
     pattern = re.compile(
-        r'(<tspan\\b[^>]*\\bid="' + re.escape(element_id) + r'"[^>]*>).*?(</tspan>)',
+        r'(<tspan\b[^>]*\bid="' + re.escape(element_id) + r'"[^>]*>).*?(</tspan>)',
         re.DOTALL,
     )
-    updated, count = pattern.subn(lambda match: match.group(1) + str(value) + match.group(2), content, count=1)
+    updated, count = pattern.subn(
+        lambda match: match.group(1) + str(value) + match.group(2),
+        content,
+        count=1,
+    )
     if count != 1:
         raise RuntimeError(f"Could not find SVG field: {element_id}")
     return updated
