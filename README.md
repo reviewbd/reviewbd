@@ -1,34 +1,34 @@
-# ReviewB
-Développeur · Administrateur système
+<div align="center">
+  <img src="assets/terminal.svg" width="100%" alt="ReviewB terminal profile" />
+</div>
 
-[![GitHub](https://img.shields.io/badge/GitHub-24292E?style=flat&logo=github&logoColor=white)](https://github.com/reviewbd)
-&nbsp;[![Discord](https://img.shields.io/badge/Discord-24292E?style=flat&logo=discord&logoColor=white)](#)
+<div align="center">
+  <a href="https://reviewb.xyz">
+    <img src="https://img.shields.io/badge/▣_PORTFOLIO-161b22?style=for-the-badge&logoColor=ff7b00&labelColor=161b22" />
+  </a>
+  &nbsp;
+  <a href="https://www.linkedin.com/">
+    <img src="https://img.shields.io/badge/▣_LINKEDIN-161b22?style=for-the-badge&logo=linkedin&logoColor=a5d6ff&labelColor=161b22" />
+  </a>
+  &nbsp;
+  <a href="mailto:support@belhorm.xyz">
+    <img src="https://img.shields.io/badge/✉_EMAIL-161b22?style=for-the-badge&logoColor=ff7b00&labelColor=161b22" />
+  </a>
+</div>
 
-<!-- ORGS:START -->
-**Work at:**
+<br/>
 
-<a href="https://github.com/Addveo" title="Addveo"><img src="https://avatars.githubusercontent.com/u/220429166?v=4&s=64" width="42" height="42" alt="Addveo"/></a>
-&nbsp;<a href="https://github.com/RyvenRP" title="RyvenRP"><img src="https://avatars.githubusercontent.com/u/275133017?v=4&s=64" width="42" height="42" alt="RyvenRP"/></a>
-<!-- ORGS:END -->
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=reviewbd&show_icons=true&hide_border=true&bg_color=161b22&title_color=ff7b00&text_color=c9d1d9&icon_color=a5d6ff&include_all_commits=true" height="150" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=reviewbd&layout=compact&hide_border=true&bg_color=161b22&title_color=ff7b00&text_color=c9d1d9" height="150" />
+</div>
 
----
+<br/>
 
-### À propos
-Je fais de l'administration système et du développement backend. Mon terrain : infrastructure self-hosted, automatisation et déploiements.
+<div align="center">
+  <img src="https://raw.githubusercontent.com/reviewbd/reviewbd/output/pacman-contribution-graph-dark.svg" width="100%" alt="Pac-Man contribution graph" />
+</div>
 
-Je préfère comprendre une stack de bout en bout et garder des systèmes fiables en production plutôt que d'empiler des scripts.
-
-### Ce que je fais
-`Administration système` &nbsp;`Infrastructure self-hosted` &nbsp;`Automatisation` &nbsp;`Déploiements` &nbsp;`Backend`
-
-### Stack
-![Go](https://img.shields.io/badge/Got-24292E?style=flat&logo=go&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-24292E?style=flat&logo=javascript&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-24292E?style=flat&logo=node.js&logoColor=white)
-![Lua](https://img.shields.io/badge/Lua-24292E?style=flat&logo=lua&logoColor=white)
-![Python](https://img.shields.io/badge/Python-24292E?style=flat&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-24292E?style=flat&logo=openjdk&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-24292E?style=flat&logo=mysql&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-24292E?style=flat&logo=linux&logoColor=white)
-![Windows Server](https://img.shields.io/badge/Windows%20Server-24292E?style=flat&logo=windows&logoColor=white)
-![Git](https://img.shields.io/badge/Git-24292E?style=flat&logo=git&logoColor=white)
+<div align="center">
+  <sub>Building systems, infrastructure and products.</sub>
+</div>
