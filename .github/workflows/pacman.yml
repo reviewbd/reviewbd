@@ -1,16 +1,17 @@
-name: Generate contribution graph
+name: Generate Claude Pac-Man contribution graph
 
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
+    paths-ignore:
+      - "pacman_dark.svg"
+      - "pacman_light.svg"
 
-# Prevent simultaneous deployments from racing on the output branch.
 concurrency:
-  group: pacman-graph
+  group: claude-pacman-graph
   cancel-in-progress: false
 
 permissions:
@@ -19,17 +20,18 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
     steps:
-      - name: Generate Pac-Man contribution graph
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_user_name: reviewbd
-
-      - name: Publish generated graph
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
+      - uses: actions/checkout@v4
+      - name: Fetch contribution calendar
         env:
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/scripts/fetch_calendar.py
+      - name: Build animated Claude Pac-Man graph
+        run: python tools/build_pacman.py
+      - name: Commit generated graphs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pacman_dark.svg pacman_light.svg
+          git diff --cached --quiet || (git commit -m "chore: refresh Claude Pac-Man contribution graph" && git push)
