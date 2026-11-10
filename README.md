@@ -7,11 +7,8 @@
     <img src="https://img.shields.io/badge/▣_PORTFOLIO-161b22?style=for-the-badge&logoColor=ff7b00&labelColor=161b22" />
   </a>
   &nbsp;
-  <a href="https://www.linkedin.com/">
-    <img src="https://img.shields.io/badge/▣_LINKEDIN-161b22?style=for-the-badge&logo=linkedin&logoColor=a5d6ff&labelColor=161b22" />
-  </a>
   &nbsp;
-  <a href="mailto:support@belhorm.xyz">
+  <a href="mailto:me@reviewb.xyz">
     <img src="https://img.shields.io/badge/✉_EMAIL-161b22?style=for-the-badge&logoColor=ff7b00&labelColor=161b22" />
   </a>
 </div>
