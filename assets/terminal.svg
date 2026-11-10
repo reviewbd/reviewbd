@@ -1,44 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470">
-<rect width="1100" height="470" rx="18" fill="#161b22"/>
-<rect x="1" y="1" width="1098" height="468" rx="17" fill="none" stroke="#30363d" stroke-width="2"/>
-<g font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14">
-<g fill="#8b949e" xml:space="preserve">
-<text x="32" y="62">                 .        .</text>
-<text x="32" y="78">             .   :--:.   .</text>
-<text x="32" y="94">          .-+##########+-.</text>
-<text x="32" y="110">       .:+################+:. </text>
-<text x="32" y="126">     .+######################+.</text>
-<text x="32" y="142">   .+##########+==+############+.</text>
-<text x="32" y="158">  +#########+.      .+###########+</text>
-<text x="32" y="174"> +########+.   .::.   .+##########+</text>
-<text x="32" y="190">+########.  .+####+.   .###########+</text>
-<text x="32" y="206">########.  +########+   .###########</text>
-<text x="32" y="222">########  +##########+   ###########</text>
-<text x="32" y="238">########.  +########+   .###########</text>
-<text x="32" y="254">+########.  .+####+.   .###########+</text>
-<text x="32" y="270"> +########+.   .::.   .+##########+</text>
-<text x="32" y="286">  +#########+.      .+###########+</text>
-<text x="32" y="302">   .+##########+==+############+.</text>
-<text x="32" y="318">     .+######################+.</text>
-<text x="32" y="334">       .:+################+:. </text>
-<text x="32" y="350">          .-+##########+-.</text>
-<text x="32" y="366">             .   :--:.   .</text>
-<text x="32" y="382">                 .        .</text>
+<rect width="1100" height="470" rx="18" fill="#161b22"/><rect x="1" y="1" width="1098" height="468" rx="17" fill="none" stroke="#30363d" stroke-width="2"/>
+<g font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="17">
+<text x="42" y="48" fill="#ff7b00" font-weight="700">reviewbd</text><text x="145" y="48" fill="#8b949e">────────────────────────────────────────────────────────────────────────</text>
+<text x="42" y="104" fill="#ff7b00">Role:</text><text x="330" y="104" text-anchor="end" fill="#a5d6ff">Developer &amp; Founder</text>
+<text x="42" y="136" fill="#ff7b00">OS:</text><text x="330" y="136" text-anchor="end" fill="#a5d6ff">Windows · Linux</text>
+<text x="42" y="168" fill="#ff7b00">IDE:</text><text x="330" y="168" text-anchor="end" fill="#a5d6ff">VS Code · Cursor</text>
+<text x="42" y="222" fill="#ff7b00">Languages:</text><text x="330" y="222" text-anchor="end" fill="#a5d6ff">TypeScript · JavaScript · Lua</text>
+<text x="42" y="254" fill="#ff7b00">Web:</text><text x="330" y="254" text-anchor="end" fill="#a5d6ff">React · Node.js · HTML · CSS</text>
+<text x="42" y="286" fill="#ff7b00">Systems:</text><text x="330" y="286" text-anchor="end" fill="#a5d6ff">Docker · Linux · Cloudflare</text>
+<text x="42" y="340" fill="#ff7b00">Focus:</text><text x="330" y="340" text-anchor="end" fill="#a5d6ff">SaaS · Infrastructure · FiveM</text>
+<text x="42" y="394" fill="#ff7b00">&gt;</text><text x="66" y="394" fill="#c9d1d9">Building products and systems.</text>
 </g>
-<g fill="#ff7b00">
-<text x="485" y="40" font-size="17" font-weight="700">reviewbd</text>
-<text x="574" y="40" fill="#8b949e"> ───────────────────────────────────────────────</text>
-<text x="485" y="80">OS:</text><text x="1080" y="80" text-anchor="end" fill="#a5d6ff">Windows · Linux</text>
-<text x="485" y="104">Host:</text><text x="1080" y="104" text-anchor="end" fill="#a5d6ff">Self-hosted infrastructure</text>
-<text x="485" y="128">IDE:</text><text x="1080" y="128" text-anchor="end" fill="#a5d6ff">VS Code · Terminal</text>
-<text x="485" y="172">Languages.Programming:</text><text x="1080" y="172" text-anchor="end" fill="#a5d6ff">JavaScript · TypeScript · Lua · Python</text>
-<text x="485" y="196">Languages.Computer:</text><text x="1080" y="196" text-anchor="end" fill="#a5d6ff">HTML · CSS · SQL · PowerShell</text>
-<text x="485" y="240">Focus.Infrastructure:</text><text x="1080" y="240" text-anchor="end" fill="#a5d6ff">Servers · Docker · Cloudflare</text>
-<text x="485" y="264">Focus.Development:</text><text x="1080" y="264" text-anchor="end" fill="#a5d6ff">Backend · FiveM · SaaS</text>
-<text x="485" y="288">Focus.Automation:</text><text x="1080" y="288" text-anchor="end" fill="#a5d6ff">APIs · Tooling · Workflows</text>
-<text x="485" y="332">Projects:</text><text x="1080" y="332" text-anchor="end" fill="#a5d6ff">Addveo · Belhorm Studio · GuardianPearl</text>
-<text x="485" y="376">GitHub:</text><text x="1080" y="376" text-anchor="end" fill="#a5d6ff">github.com/reviewbd</text>
-<text x="485" y="420" fill="#ff7b00">&gt;</text><text x="502" y="420" fill="#8b949e">Building systems, not just features.</text>
-</g>
-</g>
-</svg>
+<g stroke="#30363d" stroke-width="1"><path d="M365 72V410"/><path d="M395 72H1055 M395 184H1055 M395 296H1055" stroke-dasharray="3 7"/></g>
+<g font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="16">
+<text x="410" y="48" fill="#ff7b00">GitHub Stats</text><text x="1055" y="48" text-anchor="end" fill="#8b949e">live data below</text>
+<text x="410" y="108" fill="#8b949e">Repositories</text><text x="1055" y="108" text-anchor="end" fill="#a5d6ff">public projects</text>
+<text x="410" y="220" fill="#8b949e">Commits</text><text x="1055" y="220" text-anchor="end" fill="#a5d6ff">all-time GitHub activity</text>
+<text x="410" y="332" fill="#8b949e">Stars &amp; Followers</text><text x="1055" y="332" text-anchor="end" fill="#a5d6ff">updated automatically</text>
+<text x="410" y="394" fill="#ff7b00">&gt;</text><text x="434" y="394" fill="#c9d1d9">github.com/reviewbd</text>
+</g></svg>
