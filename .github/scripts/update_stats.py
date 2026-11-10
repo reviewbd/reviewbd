@@ -67,8 +67,7 @@ start = created.replace(hour=0, minute=0, second=0, microsecond=0)
 query = """
 query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
-    contributionsCollection(from: $from, to: $to, includePrivateContributions: true) {
-      totalCommitContributions
+    contributionsCollection(from: $from, to: $to) {
       restrictedContributionsCount
       contributionCalendar { totalContributions }
     }
@@ -109,11 +108,46 @@ while cursor < now:
         raise RuntimeError("GitHub returned no contribution data; check PROFILE_TOKEN access.")
 
     collection = user["contributionsCollection"]
-    commits += collection.get("totalCommitContributions", 0)
     contributions += collection.get("contributionCalendar", {}).get("totalContributions", 0)
     private_activity += collection.get("restrictedContributionsCount", 0)
     window_count += 1
     cursor = window_end
+
+
+# Count commits through the authenticated REST API across every repository
+# the token can access, including private repositories and organizations.
+# The GraphQL aggregate above is not a per-commit private/public breakdown.
+commit_shas = set()
+repo_page = 1
+while True:
+    repos = request_json(
+        "https://api.github.com/user/repos?visibility=all&affiliation=owner,collaborator,organization_member&per_page=100&page={repo_page}"
+    )
+    if not repos:
+        break
+    for repo in repos:
+        full_name = repo.get("full_name")
+        if not full_name:
+            continue
+        commit_page = 1
+        while True:
+            repo_commits = request_json(
+                f"https://api.github.com/repos/{full_name}/commits?author={USER}&since={start.isoformat().replace('+00:00', 'Z')}&until={now.isoformat().replace('+00:00', 'Z')}&per_page=100&page={commit_page}"
+            )
+            if not repo_commits:
+                break
+            for commit in repo_commits:
+                sha = commit.get("sha")
+                if sha:
+                    commit_shas.add(sha)
+            if len(repo_commits) < 100:
+                break
+            commit_page += 1
+    if len(repos) < 100:
+        break
+    repo_page += 1
+
+commits = len(commit_shas)
 
 stats = {
     "repo_data": profile.get("public_repos", len(repositories)),
