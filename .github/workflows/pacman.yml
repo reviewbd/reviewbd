@@ -8,6 +8,11 @@ on:
     branches:
       - main
 
+# Prevent simultaneous deployments from racing on the output branch.
+concurrency:
+  group: pacman-graph
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
