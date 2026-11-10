@@ -1,4 +1,4 @@
-name: Generate Claude contribution mascots
+name: Generate contribution graph
 
 on:
   schedule:
@@ -16,41 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Generate contribution graph animation
+      - name: Generate Pac-Man contribution graph
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: reviewbd
 
-      - name: Replace Pac-Man ghosts with Claude mascots
-        shell: bash
-        run: |
-          python - <<'PY'
-          import base64, glob, re
-
-          mascot = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-          <g fill="none" stroke="#ff8a4c" stroke-width="5" stroke-linecap="round">
-            <path d="M32 5V17 M32 47V59 M5 32H17 M47 32H59 M13 13L22 22 M42 42L51 51 M51 13L42 22 M22 42L13 51"/>
-            <path d="M32 20L37 27L44 32L37 37L32 44L27 37L20 32L27 27Z" fill="#ff8a4c" stroke="none"/>
-          </g></svg>"""
-          encoded = base64.b64encode(mascot.encode()).decode()
-          replacement = f'<image href="data:image/svg+xml;base64,{encoded}" width="20" height="20"/>'
-
-          for path in glob.glob("dist/*.svg"):
-              with open(path, encoding="utf-8") as f:
-                  svg = f.read()
-              svg, count = re.subn(
-                  r'(<symbol id="ghost-[^"]+" viewBox="0 0 20 20">).*?(</symbol>)',
-                  lambda m: m.group(1) + replacement + m.group(2),
-                  svg,
-                  flags=re.S
-              )
-              with open(path, "w", encoding="utf-8") as f:
-                  f.write(svg)
-              print(f"Updated {path}: {count} mascot sprites")
-
-          PY
-
-      - name: Publish generated SVG
+      - name: Publish generated graph
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
