@@ -1,17 +1,15 @@
-<div align="center">
+<a href="https://reviewb.xyz">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/reviewbd/reviewbd/main/assets/terminal.svg">
-    <img src="https://raw.githubusercontent.com/reviewbd/reviewbd/main/assets/terminal-light.svg" width="100%" alt="ReviewB GitHub terminal profile">
+    <img alt="ReviewB - Developer and Founder" width="100%" src="https://raw.githubusercontent.com/reviewbd/reviewbd/main/assets/terminal-light.svg">
   </picture>
-</div>
+</a>
 
-<p align="center">
-  <a href="https://reviewb.xyz"><img width="33%" src="https://img.shields.io/badge/▣_PORTFOLIO-161b22?style=for-the-badge&logo=vercel&logoColor=ff7b00&labelColor=161b22" alt="Portfolio"></a>
-  <a href="https://github.com/BrightHrzn"><img width="33%" src="https://img.shields.io/badge/▣_BRIGHTHORIZON-161b22?style=for-the-badge&logo=github&logoColor=a5d6ff&labelColor=161b22" alt="BrightHorizon"></a>
-  <a href="mailto:support@belhorm.xyz"><img width="33%" src="https://img.shields.io/badge/✉_EMAIL-161b22?style=for-the-badge&logo=minutemailer&logoColor=F76E0A&labelColor=161b22" alt="Email"></a>
+<p align="left">
+  <a href="https://reviewb.xyz"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/reviewbd/reviewbd/main/assets/link_portfolio_dark.svg"><img alt="Portfolio" width="33.3%" src="https://raw.githubusercontent.com/reviewbd/reviewbd/main/assets/link_portfolio_light.svg"></picture></a><a href="https://github.com/reviewbd"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/reviewbd/reviewbd/main/assets/link_github_dark.svg"><img alt="GitHub" width="33.3%" src="https://raw.githubusercontent.com/reviewbd/reviewbd/main/assets/link_github_light.svg"></picture></a><a href="mailto:support@belhorm.xyz"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/reviewbd/reviewbd/main/assets/link_email_dark.svg"><img alt="Email" width="33.3%" src="https://raw.githubusercontent.com/reviewbd/reviewbd/main/assets/link_email_light.svg"></picture></a>
 </p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/reviewbd/reviewbd/output/pacman-contribution-graph-dark.svg">
-  <img alt="ReviewB contribution graph" src="https://raw.githubusercontent.com/reviewbd/reviewbd/output/pacman-contribution-graph.svg" width="100%">
+  <img alt="Pac-Man eating my contribution graph" width="100%" src="https://raw.githubusercontent.com/reviewbd/reviewbd/output/pacman-contribution-graph.svg">
 </picture>
