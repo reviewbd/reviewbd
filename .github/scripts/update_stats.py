@@ -32,7 +32,7 @@ def request_json(url, method="GET", payload=None, headers=None):
 
 def replace_svg_value(content, element_id, value):
     pattern = re.compile(
-        r'(<tspan\\b(?=[^>]*\\bid="' + re.escape(element_id) + r'")[^>]*>).*?(</tspan>)',
+        r'(<tspan[^>]*id="' + re.escape(element_id) + r'"[^>]*>).*?(</tspan>)',
         re.DOTALL,
     )
     updated, count = pattern.subn(
