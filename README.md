@@ -17,6 +17,7 @@
   <sub><a href="https://github.com/Addveo">Addveo</a> · <a href="https://github.com/RyvenRP">RyvenRP</a></sub>
 </div>
 
-<p align="center">
-  <img alt="Pac-Man contribution graph" width="100%" src="https://raw.githubusercontent.com/reviewbd/reviewbd/output/pacman-contribution-graph.svg">
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/reviewbd/reviewbd/main/pacman_dark.svg">
+  <img alt="Claude mascots chasing Pac-Man across my contribution graph" width="100%" src="https://raw.githubusercontent.com/reviewbd/reviewbd/main/pacman_light.svg">
+</picture>
