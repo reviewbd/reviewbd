@@ -26,7 +26,7 @@
 <tspan x="447" y="411" class="cc">.</tspan>
 <tspan x="447" y="431">- GitHub Stats -—————————————————————————————————————————-</tspan>
 <tspan x="447" y="451"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> ........</tspan><tspan x="570" class="value" id="repo_data">1</tspan><tspan x="700" class="key">Stars</tspan>:<tspan x="1000" text-anchor="end" class="value" id="star_data">2</tspan></tspan>
-<tspan x="447" y="471"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc"> ......</tspan><tspan x="570" class="value" id="commit_data">85</tspan><tspan x="700" class="key">Private activity</tspan>:<tspan x="1000" text-anchor="end" class="value" id="private_data">add PROFILE_TOKEN</tspan></tspan>
-<tspan x="447" y="491"><tspan class="cc">. </tspan><tspan class="key">Contributions</tspan>:<tspan class="cc"> ....</tspan><tspan x="570" class="value" id="contribution_data">85</tspan><tspan x="700" class="key">Followers</tspan>:<tspan x="1000" text-anchor="end" class="value" id="follower_data">4</tspan></tspan>
+<tspan x="447" y="471"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc"> ......</tspan><tspan x="570" class="value" id="commit_data">77</tspan><tspan x="700" class="key">Private activity</tspan>:<tspan x="1000" text-anchor="end" class="value" id="private_data">2,989</tspan></tspan>
+<tspan x="447" y="491"><tspan class="cc">. </tspan><tspan class="key">Contributions</tspan>:<tspan class="cc"> ....</tspan><tspan x="570" class="value" id="contribution_data">3,072</tspan><tspan x="700" class="key">Followers</tspan>:<tspan x="1000" text-anchor="end" class="value" id="follower_data">4</tspan></tspan>
 <tspan x="447" y="531"><tspan class="key">&gt; </tspan><tspan class="value">█<animate attributeName="opacity" values="1;0" dur="1.06s" calcMode="discrete" repeatCount="indefinite"/></tspan></tspan>
 </text></svg>
