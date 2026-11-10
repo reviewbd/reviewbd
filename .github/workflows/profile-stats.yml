@@ -6,10 +6,15 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
+    paths-ignore:
+      - "pacman_dark.svg"
+      - "pacman_light.svg"
+      - "assets/terminal.svg"
+      - "assets/terminal-light.svg"
 
 # Prevent overlapping runs from racing while committing refreshed SVG files.
 concurrency:
-  group: profile-stats
+  group: profile-main-write
   cancel-in-progress: false
 
 permissions:
