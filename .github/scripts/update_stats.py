@@ -2,9 +2,12 @@ import json
 import os
 import re
 import urllib.request
+from datetime import datetime, timezone
 
 USER = "reviewbd"
-TOKEN = os.environ.get("GITHUB_TOKEN", "")
+PROFILE_TOKEN = os.environ.get("PROFILE_TOKEN", "").strip()
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "").strip()
+TOKEN = PROFILE_TOKEN or GITHUB_TOKEN
 HEADERS = {
     "Accept": "application/vnd.github+json",
     "X-GitHub-Api-Version": "2022-11-28",
@@ -12,14 +15,15 @@ HEADERS = {
 if TOKEN:
     HEADERS["Authorization"] = f"Bearer {TOKEN}"
 
-def github_get(url):
-    request = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(request, timeout=30) as response:
+def request_json(url, method="GET", payload=None, headers=None):
+    body = None if payload is None else json.dumps(payload).encode("utf-8")
+    request = urllib.request.Request(url, data=body, headers=headers or HEADERS, method=method)
+    with urllib.request.urlopen(request, timeout=45) as response:
         return json.load(response)
 
 def replace_svg_value(content, element_id, value):
     pattern = re.compile(
-        r'(<tspan\b[^>]*\bid="' + re.escape(element_id) + r'"[^>]*>).*?(</tspan>)',
+        r'(<tspan\\b[^>]*\\bid="' + re.escape(element_id) + r'"[^>]*>).*?(</tspan>)',
         re.DOTALL,
     )
     updated, count = pattern.subn(
@@ -28,16 +32,14 @@ def replace_svg_value(content, element_id, value):
         count=1,
     )
     if count != 1:
-        raise RuntimeError(f"Could not find SVG field: {element_id}")
+        raise RuntimeError(f"SVG field not found exactly once: {element_id}")
     return updated
 
-profile = github_get(f"https://api.github.com/users/{USER}")
+profile = request_json(f"https://api.github.com/users/{USER}")
 repositories = []
 page = 1
 while True:
-    batch = github_get(
-        f"https://api.github.com/users/{USER}/repos?type=owner&per_page=100&page={page}"
-    )
+    batch = request_json(f"https://api.github.com/users/{USER}/repos?type=owner&per_page=100&page={page}")
     if not batch:
         break
     repositories.extend(batch)
@@ -46,25 +48,57 @@ while True:
     page += 1
 
 stars = sum(repo.get("stargazers_count", 0) for repo in repositories)
-forks = sum(repo.get("forks_count", 0) for repo in repositories)
-commits = github_get(
-    f"https://api.github.com/search/commits?q=author:{USER}&per_page=1"
-).get("total_count", 0)
+now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+query = """
+query($login: String!, $from: DateTime!, $to: DateTime!) {
+  user(login: $login) {
+    contributionsCollection(from: $from, to: $to) {
+      totalCommitContributions
+      restrictedContributionsCount
+      contributionCalendar { totalContributions }
+    }
+  }
+}
+"""
+graphql = request_json(
+    "https://api.github.com/graphql",
+    method="POST",
+    payload={
+        "query": query,
+        "variables": {"login": USER, "from": "2000-01-01T00:00:00Z", "to": now},
+    },
+    headers={**HEADERS, "Content-Type": "application/json"},
+)
+if graphql.get("errors"):
+    raise RuntimeError("GitHub GraphQL error: " + "; ".join(e.get("message", "unknown") for e in graphql["errors"]))
+user = graphql.get("data", {}).get("user")
+if not user:
+    raise RuntimeError("GitHub did not return contribution data for " + USER)
+collection = user["contributionsCollection"]
+
+# totalCommitContributions includes private commits only with a token carrying read:user.
+# restrictedContributionsCount aggregates all hidden contribution types, not just commits.
+private_activity = collection.get("restrictedContributionsCount", 0)
+if not PROFILE_TOKEN:
+    private_activity = "add PROFILE_TOKEN"
 
 stats = {
     "repo_data": profile.get("public_repos", len(repositories)),
     "star_data": stars,
-    "commit_data": commits,
+    "commit_data": collection.get("totalCommitContributions", 0),
+    "private_data": private_activity,
+    "contribution_data": collection.get("contributionCalendar", {}).get("totalContributions", 0),
     "follower_data": profile.get("followers", 0),
-    "fork_data": forks,
 }
 
 for path in ("assets/terminal.svg", "assets/terminal-light.svg"):
     with open(path, encoding="utf-8") as file:
         content = file.read()
     for element_id, value in stats.items():
-        content = replace_svg_value(content, element_id, f"{value:,}")
+        rendered = f"{value:,}" if isinstance(value, int) else value
+        content = replace_svg_value(content, element_id, rendered)
     with open(path, "w", encoding="utf-8") as file:
         file.write(content)
 
-print("Updated GitHub profile statistics:", stats)
+print("Updated ReviewB GitHub statistics:", stats)
