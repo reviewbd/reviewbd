@@ -4,7 +4,7 @@
 <rect width="1018" height="551" rx="15" fill="#ffffff"/>
 <defs><clipPath id="reviewbAvatarClip"><circle cx="195" cy="245" r="145"/></clipPath></defs>
 <circle cx="195" cy="245" r="151" fill="none" stroke="#F76E0A" stroke-width="2" opacity=".8"/>
-<image href="https://github.com/reviewbd.png?size=512" x="50" y="100" width="290" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#reviewbAvatarClip)"/>
+<image href="https://avatars.githubusercontent.com/u/103180532?v=4" x="50" y="100" width="290" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#reviewbAvatarClip)"/>
 <text fill="#24292f" font-size="16px">
 <tspan x="447" y="31"><tspan class="title">reviewbd@github</tspan> -————————————————————————————————————————-</tspan>
 <tspan x="447" y="51"><tspan class="cc">. </tspan><tspan class="key">OS</tspan>:</tspan><tspan x="670" y="51" class="cc">........................</tspan><tspan x="760" y="51" class="value">Windows, Linux</tspan>
