@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1018px" height="551px" viewBox="0 0 1018 551" font-family="Consolas,Menlo,monospace">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1018px" height="551px" viewBox="0 0 1018 551" font-family="Consolas,Menlo,monospace">
 <style>.key{fill:#F76E0A;}.value{fill:#a5d6ff;}.title{fill:#F76E0A;font-weight:bold;}.cc{fill:#616e7f;}text,tspan{white-space:pre;}</style>
 <rect width="1018" height="551" rx="15" fill="#161b22"/>
 <defs><clipPath id="reviewbAvatarClip"><circle cx="195" cy="245" r="145"/></clipPath></defs>
 <circle cx="195" cy="245" r="151" fill="none" stroke="#F76E0A" stroke-width="2" opacity=".8"/>
-<image href="https://github.com/reviewbd.png?size=290" x="50" y="100" width="290" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#reviewbAvatarClip)"/>
+<image xlink:href="https://github.com/reviewbd.png?size=290" x="50" y="100" width="290" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#reviewbAvatarClip)"/>
 <text fill="#c9d1d9" font-size="16px">
 <tspan x="447" y="31"><tspan class="title">reviewbd@github</tspan> -————————————————————————————————————————-</tspan>
 <tspan x="447" y="51"><tspan class="cc">. </tspan><tspan class="key">OS</tspan>:</tspan><tspan x="670" y="51" class="cc">........................</tspan><tspan x="760" y="51" class="value">Windows, Linux</tspan>
@@ -20,7 +20,7 @@
 <tspan x="447" y="291"><tspan class="cc">. </tspan><tspan class="key">Focus.DevOps</tspan>:</tspan><tspan x="670" y="291" class="cc">........................</tspan><tspan x="760" y="291" class="value">Cloudflare, PM2, CI/CD</tspan>
 <tspan x="447" y="311"><tspan class="cc">. </tspan><tspan class="key">Hobbies</tspan>:</tspan><tspan x="670" y="311" class="cc">........................</tspan><tspan x="760" y="311" class="value">Cars, Cybersecurity, Dev</tspan>
 <tspan x="447" y="331">- Contact -——————————————————————————————————————————————-</tspan>
-<tspan x="447" y="351"><tspan class="cc">. </tspan><tspan class="key">Email</tspan>:<tspan class="cc"> ....................</tspan><tspan class="value">support@belhorm.xyz</tspan></tspan>
+<tspan x="447" y="351"><tspan class="cc">. </tspan><tspan class="key">Email</tspan>:<tspan class="cc"> ....................</tspan><tspan class="value">me@reviewb.xyz</tspan></tspan>
 <tspan x="447" y="371"><tspan class="cc">. </tspan><tspan class="key">Portfolio</tspan>:<tspan class="cc"> .................</tspan><tspan class="value">reviewb.xyz</tspan></tspan>
 <tspan x="447" y="391"><tspan class="cc">. </tspan><tspan class="key">GitHub</tspan>:<tspan class="cc"> ....................</tspan><tspan class="value">github.com/reviewbd</tspan></tspan>
 <tspan x="447" y="411" class="cc">.</tspan>
