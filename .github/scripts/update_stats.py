@@ -67,7 +67,7 @@ start = created.replace(hour=0, minute=0, second=0, microsecond=0)
 query = """
 query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
-    contributionsCollection(from: $from, to: $to) {
+    contributionsCollection(from: $from, to: $to, includePrivateContributions: true) {
       totalCommitContributions
       restrictedContributionsCount
       contributionCalendar { totalContributions }
